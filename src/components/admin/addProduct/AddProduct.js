@@ -41,7 +41,7 @@ const ProductForm = () => {
       formData.append('desc', product.desc);
       formData.append('image', product.image);
 
-      const response = await axios.post('http://localhost:4242/api/products/create-product', formData, {
+      const response = await axios.post('https://server-1-27iv.onrender.com/api/products/create-product', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
