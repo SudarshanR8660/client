@@ -15,7 +15,7 @@
 //   useEffect(() => {
 //     const fetchOrders = async () => {
 //       try {
-//         const response = await axios.get(`https://server-1-27iv.onrender.com/api/users/${userId}/orders`);
+//         const response = await axios.get(`http://localhost:4242/api/users/${userId}/orders`);
 //         setOrders(response.data.orders);
 //       } catch (err) {
 //         setError('An error occurred while fetching orders');
@@ -79,6 +79,7 @@ const styles = {
   },
   orderItem: {
     marginBottom: '20px',
+    color:'black',
     padding: '20px',
     backgroundColor: '#fff',
     borderRadius: '8px',
@@ -139,19 +140,19 @@ const UserOrderDetails = () => {
     {orders.map(order => (<div class="flex flex-wrap items-center gap-y-4 py-6" key={order._id}>
             <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
               <dt class="text-base font-medium text-gray-500 dark:text-gray-400">Order ID:</dt>
-              <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline">{order._id}</a>
+              <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-dark">
+                <a href="#" class="hover:underline dark">{order._id}</a>
               </dd>
             </dl>
 
-            <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
+            {/* <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
               <dt class="text-base font-medium text-gray-500 dark:text-gray-400">Date:</dt>
               <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">20.12.2023</dd>
-            </dl>
+            </dl> */}
 
             <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
               <dt class="text-base font-medium text-gray-500 dark:text-gray-400">Price:</dt>
-              <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">${order.price / 100}</dd>
+              <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-dark">${order.price / 100}</dd>
             </dl>
 
             <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">

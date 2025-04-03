@@ -182,7 +182,7 @@ const CartPage = () => {
         <div className="space-y-6">
           {cart.map((item) => (
             <div key={item.productId} className="flex items-center justify-between p-4 border-b border-gray-300">
-              <img src={`/${item.imageURL}`} alt={item.name} className="w-32 h-32 object-cover mr-4" />
+              <img src={`https://server-1-27iv.onrender.com/${item.imageURL}`} alt={item.name} className="w-32 h-32 object-cover mr-4" />
               <div className="flex-1">
                 <p className="text-lg font-semibold">{item.name}</p>
                 <p className="text-sm text-gray-600">{item.brand}</p>

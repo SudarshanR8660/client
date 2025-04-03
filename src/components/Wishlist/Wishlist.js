@@ -104,7 +104,7 @@ const Wishlist = () => {
               <tr key={product.productId} className="hover:bg-gray-100">
                 <td className="p-2 border-b">
                   <img
-                    src={`/${product.imageURL}`}
+                    src={`https://server-1-27iv.onrender.com/${product.imageURL}`}
                     alt={product.name}
                     className="w-16 h-16 object-cover rounded"
                   />

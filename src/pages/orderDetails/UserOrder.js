@@ -11,7 +11,7 @@ const UserOrderDetails = () => {
   useEffect(() => {
     const fetchOrderDetails = async () => {
       try {
-        const response = await axios.get(`/api/users/orders/${orderId}`);
+        const response = await axios.get(`https://server-1-27iv.onrender.com/api/users/orders/${orderId}`);
         setOrder(response.data.order);
       } catch (err) {
         setError('An error occurred while fetching order details');
