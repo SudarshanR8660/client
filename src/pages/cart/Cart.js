@@ -224,7 +224,7 @@ const CartPage = () => {
 
       {hasItemsInCart && (
         <div className="mt-6 text-xl font-semibold text-right">
-          <p>Total: ${calculateTotalPrice()}</p>
+          <p>Total: ₹{calculateTotalPrice()}</p>
           <div className="mt-4 text-center">
             <button
               onClick={handleCheckout}
