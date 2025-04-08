@@ -53,7 +53,7 @@ function Orders() {
     // Fetch orders from the backend when the component mounts
     async function fetchOrders() {
       try {
-        const response = await axios.get('http://localhost:4242/orders');
+        const response = await axios.get('https://server-1-1gbu.onrender.com/orders');
         setOrders(response.data.orders);
       } catch (error) {
         console.error('Error fetching orders:', error);

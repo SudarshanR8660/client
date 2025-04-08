@@ -232,7 +232,7 @@
 
 //   const fetchCart = async (userId) => {
 //     try {
-//       const response = await fetch(`http://localhost:4242/api/cart/${userId}`);
+//       const response = await fetch(`https://server-1-1gbu.onrender.com/api/cart/${userId}`);
 //       if (response.ok) {
 //         const data = await response.json();
 //         setCart(data);
@@ -252,7 +252,7 @@
 
 //   const addToCart = async (userId, productId, name, brand, desc, price, imageURL) => {
 //     try {
-//       const response = await fetch('http://localhost:4242/api/cart', {
+//       const response = await fetch('https://server-1-1gbu.onrender.com/api/cart', {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify({ userId, productId, name, brand, desc, price, imageURL }),
@@ -270,7 +270,7 @@
 
 //   const removeFromCart = async (userId, productId) => {
 //     try {
-//       const response = await fetch(`http://localhost:4242/api/cart/${userId}/${productId}`, { method: 'DELETE' });
+//       const response = await fetch(`https://server-1-1gbu.onrender.com/api/cart/${userId}/${productId}`, { method: 'DELETE' });
 //       if (response.ok) {
 //         toast.success('Product removed from cart successfully');
 //         fetchCart(userId); // Fetch the cart again to update the state
@@ -370,7 +370,7 @@
 //       } else {
 //         // If the product is not in the cart, add it to the cart
 //         const newProduct = { userId, productId, name, brand, desc, price, imageURL, quantity: 1 };
-//         const response = await fetch('http://localhost:4242/api/cart', {
+//         const response = await fetch('https://server-1-1gbu.onrender.com/api/cart', {
 //           method: 'POST',
 //           headers: {
 //             'Content-Type': 'application/json',
@@ -436,7 +436,7 @@
 //   };
 //   const fetchCart =async (userId) => {
 //     // Make a request to fetch cart data from the server using the userId
-//     fetch(`http://localhost:4242/api/cart/${userId}`)
+//     fetch(`https://server-1-1gbu.onrender.com/api/cart/${userId}`)
 //       .then((response) => {
 //         // Check if the response is successful
 //         if (!response.ok) {
@@ -495,7 +495,7 @@
 
 //   const fetchCart = async (userId) => {
 //     try {
-//       const response = await fetch(`http://localhost:4242/api/cart?userId=${userId}`);
+//       const response = await fetch(`https://server-1-1gbu.onrender.com/api/cart?userId=${userId}`);
 //       const data = await response.json();
 //       setCart(data);
 //     } catch (error) {
@@ -505,7 +505,7 @@
 
 //   const addToCart = async (userId, productId, name, brand, desc, price, imageURL) => {
 //     try {
-//       const response = await fetch('http://localhost:4242/api/cart', {
+//       const response = await fetch('https://server-1-1gbu.onrender.com/api/cart', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -641,7 +641,7 @@
 //   };
 //   const fetchCart = (userId) => {
 //     // Make a request to fetch cart data from the server using the userId
-//     fetch(`http://localhost:4242/api/cart/${userId}`)
+//     fetch(`https://server-1-1gbu.onrender.com/api/cart/${userId}`)
 //       .then((response) => {
 //         // Check if the response is successful
 //         if (!response.ok) {

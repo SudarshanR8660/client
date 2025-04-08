@@ -78,7 +78,7 @@ function OrderDetails() {
   useEffect(() => {
     async function fetchOrderDetails() {
       try {
-        const response = await axios.get(`http://localhost:4242/api/orders/${orderId}`);
+        const response = await axios.get(`https://server-1-1gbu.onrender.com/api/orders/${orderId}`);
         setOrder(response.data.order);
       } catch (error) {
         console.error('Error fetching order details:', error);
@@ -92,8 +92,8 @@ function OrderDetails() {
     if (!updatedStatus) return;
     try {
       setIsUpdating(true);
-      await axios.put(`http://localhost:4242/api/orders/${orderId}`, { orderStatus: updatedStatus });
-      const response = await axios.get(`http://localhost:4242/api/orders/${orderId}`);
+      await axios.put(`https://server-1-1gbu.onrender.com/api/orders/${orderId}`, { orderStatus: updatedStatus });
+      const response = await axios.get(`https://server-1-1gbu.onrender.com/api/orders/${orderId}`);
       setOrder(response.data.order);
       navigate('/Orders')
       

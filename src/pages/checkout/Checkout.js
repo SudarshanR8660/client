@@ -103,7 +103,7 @@
 //     setIsLoading(true);
 
 //     try {
-//       const response = await fetch('http://localhost:4242/create-payment-intent', {
+//       const response = await fetch('https://server-1-1gbu.onrender.com/create-payment-intent', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -180,7 +180,7 @@
 //     setIsLoading(true);
 
 //     try {
-//       const response = await fetch('http://localhost:4242/create-payment-intent', {
+//       const response = await fetch('https://server-1-1gbu.onrender.com/create-payment-intent', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -270,7 +270,7 @@ const Checkout = ({ shippingAddress, billingAddress, totalAmount, cartData }) =>
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:4242/create-payment-intent', {
+      const response = await fetch('https://server-1-1gbu.onrender.com/create-payment-intent', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

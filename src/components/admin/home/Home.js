@@ -190,7 +190,7 @@ function Dashboard() {
       try {
         setLoading(true);
         // Replace with your actual backend URL
-        const response = await axios.get('http://localhost:4242/api/dashboard/stats');
+        const response = await axios.get('https://server-1-1gbu.onrender.com/api/dashboard/stats');
         setStats(response.data);
         setLoading(false);
       } catch (err) {

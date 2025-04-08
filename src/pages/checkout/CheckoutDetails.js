@@ -422,14 +422,14 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post(`http://localhost:4242/api/address`, {
+//       const response = await axios.post(`https://server-1-1gbu.onrender.com/api/address`, {
 //         userId,
 //         addressType: 'shipping', // Specify the addressType
 //         ...shippingAddress, // Spread the shippingAddress object as addressData
 //       });
 //       console.log('Shipping address saved successfully!');
   
-//       const billingResponse = await axios.post(`http://localhost:4242/api/address`, {
+//       const billingResponse = await axios.post(`https://server-1-1gbu.onrender.com/api/address`, {
 //         userId,
 //         addressType: 'billing', // Specify the addressType
 //         ...billingAddress, // Spread the billingAddress object as addressData
@@ -715,14 +715,14 @@ const ShippingAddressForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:4242/api/address`, {
+      const response = await axios.post(`https://server-1-1gbu.onrender.com/api/address`, {
         userId,
         addressType: 'shipping',
         ...shippingAddress,
       });
       console.log('Shipping address saved successfully!');
 
-      const billingResponse = await axios.post(`http://localhost:4242/api/address`, {
+      const billingResponse = await axios.post(`https://server-1-1gbu.onrender.com/api/address`, {
         userId,
         addressType: 'billing',
         ...billingAddress,

@@ -138,7 +138,7 @@ const Product = () => {
   const [maxPrice, setMaxPrice] = useState("");
 
   useEffect(() => {
-    fetch('http://localhost:4242/api/products')
+    fetch('https://server-1-1gbu.onrender.com/api/products')
       .then((response) => response.json())
       .then((data) => {
         console.log('Fetched Products:', data);
@@ -272,7 +272,7 @@ const Product = () => {
             className="bg-gray-40 shadow-lg p-4"
           >
             <img
-              src={`http://localhost:4242/${product.imageURL}`}
+              src={`https://server-1-1gbu.onrender.com/${product.imageURL}`}
               alt={product.name}
               className="w-full h-40 object-cover rounded-t-lg"
             />

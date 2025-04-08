@@ -15,7 +15,7 @@
 //   useEffect(() => {
 //     const fetchOrders = async () => {
 //       try {
-//         const response = await axios.get(`http://localhost:4242/api/users/${userId}/orders`);
+//         const response = await axios.get(`https://server-1-1gbu.onrender.com/api/users/${userId}/orders`);
 //         setOrders(response.data.orders);
 //       } catch (err) {
 //         setError('An error occurred while fetching orders');
@@ -105,7 +105,7 @@ const UserOrderDetails = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`http://localhost:4242/api/users/${userId}/orders`);
+        const response = await axios.get(`https://server-1-1gbu.onrender.com/api/users/${userId}/orders`);
         setOrders(response.data.orders);
       } catch (err) {
         setError('An error occurred while fetching orders');

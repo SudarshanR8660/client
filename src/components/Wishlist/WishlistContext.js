@@ -12,7 +12,7 @@ const WishlistContext = createContext();
 export const WishlistProvider = ({ children }) => {
   const [wishlist, setWishlist] = useState([]);
   const { auth } = useAuth();
-  const wishlistEndpoint = 'http://localhost:4242/api/wishlist';
+  const wishlistEndpoint = 'https://server-1-1gbu.onrender.com/api/wishlist';
 
   useEffect(() => {
     if (auth && auth.user && auth.user._id) {

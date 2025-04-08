@@ -21,7 +21,7 @@
 //   useEffect(() => {
 //     async function fetchProducts() {
 //       try {
-//         const response = await axios.get('http://localhost:4242/api/products');
+//         const response = await axios.get('https://server-1-1gbu.onrender.com/api/products');
 //         setProducts(response.data);
 //       } catch (error) {
 //         console.error('Error fetching products:', error);
@@ -44,8 +44,8 @@
 
 //   const handleSave = async () => {
 //     try {
-//       await axios.put(`http://localhost:4242/api/products/${editingProductId}`, productData);
-//       const response = await axios.get('http://localhost:4242/api/products');
+//       await axios.put(`https://server-1-1gbu.onrender.com/api/products/${editingProductId}`, productData);
+//       const response = await axios.get('https://server-1-1gbu.onrender.com/api/products');
 //       setProducts(response.data);
 //       setEditMode(false);
 //       setEditingProductId(null);
@@ -64,8 +64,8 @@
 
 //   const handleDelete = async (productId) => {
 //     try {
-//       await axios.delete(`http://localhost:4242/api/products/${productId}`);
-//       const response = await axios.get('http://localhost:4242/api/products');
+//       await axios.delete(`https://server-1-1gbu.onrender.com/api/products/${productId}`);
+//       const response = await axios.get('https://server-1-1gbu.onrender.com/api/products');
 //       setProducts(response.data);
 //     } catch (error) {
 //       console.error('Error deleting product:', error);
@@ -157,7 +157,7 @@ const ProductForm = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await axios.get('http://localhost:4242/api/products');
+        const response = await axios.get('https://server-1-1gbu.onrender.com/api/products');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -180,8 +180,8 @@ const ProductForm = () => {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://localhost:4242/api/products/${editingProductId}`, productData);
-      const response = await axios.get('http://localhost:4242/api/products');
+      await axios.put(`https://server-1-1gbu.onrender.com/api/products/${editingProductId}`, productData);
+      const response = await axios.get('https://server-1-1gbu.onrender.com/api/products');
       setProducts(response.data);
       setEditMode(false);
       setEditingProductId(null);
@@ -200,8 +200,8 @@ const ProductForm = () => {
 
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:4242/api/products/${productId}`);
-      const response = await axios.get('http://localhost:4242/api/products');
+      await axios.delete(`https://server-1-1gbu.onrender.com/api/products/${productId}`);
+      const response = await axios.get('https://server-1-1gbu.onrender.com/api/products');
       setProducts(response.data);
     } catch (error) {
       console.error('Error deleting product:', error);
@@ -385,7 +385,7 @@ const ProductForm = () => {
                       onChange={handleChange} 
                       style={styles.inputField}
                     /> : 
-                    <img src={`http://localhost:4242/${product.imageURL}`} alt={product.name} style={styles.image} />
+                    <img src={`https://server-1-1gbu.onrender.com/${product.imageURL}`} alt={product.name} style={styles.image} />
                   }
                 </td>
                 <td style={styles.td}>
