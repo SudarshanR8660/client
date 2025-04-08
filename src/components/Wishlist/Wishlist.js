@@ -104,14 +104,14 @@ const Wishlist = () => {
               <tr key={product.productId} className="hover:bg-gray-100">
                 <td className="p-2 border-b">
                   <img
-                    src={`/${product.imageURL}`}
+                    src={`https://server-1-1gbu.onrender.com/${product.imageURL}`}
                     alt={product.name}
                     className="w-16 h-16 object-cover rounded"
                   />
                 </td>
                 <td className="p-2 border-b">{product.name}</td>
                 <td className="p-2 border-b">{product.brand}</td>
-                <td className="p-2 border-b">${product.price}</td>
+                <td className="p-2 border-b">₹{product.price}</td>
                 <td className="p-2 border-b">{product.quantity}</td>
                 <td className="p-2 border-b flex space-x-2">
                   <button
